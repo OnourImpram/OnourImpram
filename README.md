@@ -28,6 +28,8 @@ A bilingual guide, Turkish and English, that brings agentic coding to social sci
 
 ## Background
 
+- Licensed clinical psychologist (Türkiye), graduate of Aristotle University of Thessaloniki (Greece), and Member of the Psychological Society of Ireland
+- Researcher, European Federation of Psychologists' Associations (EFPA) Project 13 Expert Working Group, examining the use of AI by psychology practitioners in Europe and its implications for training
 - Author of *Üretken Yapay Zekâ ve Ruh Sağlığı* (Generative AI and Mental Health), Nobel Academic Publishing
 - Research in generative AI for mental health, algorithmic accountability, AI attachment and dependency, and human-AI co-regulation
 
