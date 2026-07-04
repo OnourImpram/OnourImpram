@@ -1,46 +1,73 @@
 # Onour Impram
 
-> Clinical psychologist and AI researcher building accountable, privacy-first memory infrastructure for AI systems.
+> Clinical psychologist building accountable AI memory, safer agent workflows, and evidence grounded decision systems.
 
-I work at the intersection of clinical psychology, AI safety, and local-first systems engineering. My central question is simple to state and hard to answer. How can AI systems remember, reason, and adapt without becoming opaque, uncorrectable, or unsafe, especially when human wellbeing is involved?
+I work at the intersection of clinical psychology, AI safety, and research software engineering.
 
-As a clinician, I care about responsibility, consent, context, and harm reduction. As a builder, I care about correctness, reproducibility, auditability, and system design. My clinical background keeps my engineering grounded in a duty of care. Systems that remember people must also be systems that can be inspected, corrected, constrained, and held accountable.
+My central question is practical.
 
-## Featured work
+**How can AI systems remember, reason, and act without becoming opaque, uncorrectable, or unsafe when human stakes are real?**
 
-### [mneme](https://github.com/TheGoatPsy/mneme)
+My clinical background gives me a duty of care lens. My engineering work turns that lens into systems, local first memory, claim tracking, audit trails, reversibility gates, red team tests, and evidence aware workflows.
 
-[![license](https://img.shields.io/github/license/TheGoatPsy/mneme?style=flat-square&color=444)](https://github.com/TheGoatPsy/mneme/blob/main/LICENSE)
-[![mneme-mcp-server](https://img.shields.io/npm/v/mneme-mcp-server?style=flat-square&label=mneme-mcp-server&color=444)](https://www.npmjs.com/package/mneme-mcp-server)
-[![docs](https://img.shields.io/badge/docs-online-444?style=flat-square)](https://thegoatpsy.github.io/mneme/)
+## Start here
 
-Vault-native, accountable memory for Claude Code and MCP clients. Markdown is the source of truth, there is no LLM on the Stop path, and every derived store is redacted before it is written. Retrieval combines SQLite FTS5, hybrid search, and reciprocal rank fusion. Temporal claims move through an explicit lifecycle with memory blame, gated knowledge-graph enrichment, and latency and quality benchmarks locked in CI.
+### [mneme](https://github.com/OnourImpram/mneme)
 
-Run it as an MCP server.
+Vault native, accountable memory for Claude Code and MCP clients.
+
+Markdown is the source of truth. No LLM runs on the Stop path. Derived stores are redacted before write. Retrieval combines SQLite FTS5, hybrid search, and reciprocal rank fusion.
 
 ```bash
 npx -y mneme-mcp-server
 ```
 
-### [claude-code-for-social-scientists](https://github.com/TheGoatPsy/claude-code-for-social-scientists)
+### [VocationOS](https://github.com/OnourImpram/vocation-os)
 
-A bilingual guide, Turkish and English, that brings agentic coding to social science research without pretending AI removes the need for methodology, authorship transparency, or critical judgment. Dual-licensed, with AI-use disclosure aligned to COPE, WAME, ICMJE, and the EU AI Act.
+Evidence grounded career decision safety for high agency operators.
 
-## Background
+A human supervised decision system with claim graphs, packet validation, reversibility gates, high stakes certainty brakes, and append only action ledgers.
 
-- Licensed clinical psychologist (Türkiye), graduate of Aristotle University of Thessaloniki (Greece), and Member of the Psychological Society of Ireland
-- Researcher, European Federation of Psychologists' Associations (EFPA) Project 13 Expert Working Group, examining the use of AI by psychology practitioners in Europe and its implications for training
-- Author of *Üretken Yapay Zekâ ve Ruh Sağlığı* (Generative AI and Mental Health), Nobel Academic Publishing
-- Research in generative AI for mental health, algorithmic accountability, AI attachment and dependency, and human-AI co-regulation
+```bash
+git clone https://github.com/OnourImpram/vocation-os
+```
 
-## Working with
+### [Claude Code for Social Scientists](https://github.com/OnourImpram/claude-code-for-social-scientists)
 
-Python, TypeScript, Model Context Protocol, Claude Code, SQLite and FTS5, knowledge graphs, hybrid retrieval, local-first systems, evaluation pipelines.
+A bilingual Turkish and English guide for using Claude Code in social science research without abandoning methodology, authorship transparency, or critical judgment.
+
+### [mergen](https://github.com/OnourImpram/mergen)
+
+A risk scaled execution backbone for AI coding agents, workflow orchestration, and adversarial verification.
+
+## What I build
+
+| Area | Focus |
+| --- | --- |
+| Accountable AI memory | Local first memory, redaction, retrieval, claim lifecycle, auditability |
+| Agent safety | Reversibility, guarded automation, prompt injection resistance, red team tests |
+| Research software | Citation audited workflows, reproducibility, academic disclosure, methodology |
+| Human stakes AI | Mental health, career decisions, professional identity, consent, accountability |
+
+## Current focus
+
+1. Making AI memory inspectable, correctable, and safe.
+2. Building agent workflows that scale judgment, not just automation.
+3. Translating clinical duty of care into AI infrastructure.
+4. Helping social scientists use agentic tools without methodological collapse.
 
 ## Principles
 
-Correctness over appearance. Auditability over mystique. Care over scale theatre. Local-first when the stakes are human. Every memory should be traceable, correctable, and accountable.
+Correctness over appearance.
 
-## Elsewhere
+Auditability over mystique.
 
-[ORCID](https://orcid.org/0000-0003-1076-3928)
+Care over scale theatre.
+
+Local first when the stakes are human.
+
+Every memory should be traceable, correctable, and accountable.
+
+## Follow the work
+
+If this work is useful, star the projects you want to revisit and follow [@OnourImpram](https://github.com/OnourImpram) for future releases on accountable AI memory, agent safety, and research workflows.
