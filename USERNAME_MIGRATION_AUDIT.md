@@ -9,7 +9,7 @@ Legacy username references are allowed only in this audit, migration checklists,
 | Repository | File | Old reference | New reference or decision | Category | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Profile README repo | `README.md` | Old owner links and old Pages links | Replaced with `https://github.com/OnourImpram/...` profile copy | `replace_now` | Public profile copy no longer centers the legacy username. |
-| Profile README repo | Repository name | `OnourImpram/TheGoatPsy` | Rename to `OnourImpram/OnourImpram` | `manual_registry_update` | Required for GitHub profile README rendering. |
+| Profile README repo | Repository name | `OnourImpram/TheGoatPsy` | Renamed to `OnourImpram/OnourImpram` | `replace_now` | Completed so GitHub can render the profile README. |
 | `mneme` | `README.md`, `CONTRIBUTING.md`, `SECURITY.md`, `NOTICE`, `docs/GOVERNANCE.md` | Old GitHub owner URLs and maintainer handle | Replaced with `OnourImpram` URLs and handle | `replace_now` | Current navigation and maintainer references. |
 | `mneme` | `.github/CODEOWNERS`, issue template config | `@TheGoatPsy` and old security/discussion URLs | Replaced with `@OnourImpram` and new URLs | `replace_now` | Current GitHub ownership surface. |
 | `mneme` | `CITATION.cff`, root `package.json`, plugin manifests, package READMEs, package `pyproject.toml` files | Old repository, homepage, bugs, documentation URLs | Replaced with `https://github.com/OnourImpram/mneme` URLs | `replace_now` | Package names were not renamed. |

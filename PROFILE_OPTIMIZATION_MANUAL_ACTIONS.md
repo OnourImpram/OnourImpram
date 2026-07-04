@@ -19,7 +19,7 @@ Clinical psychologist turning duty of care into accountable AI infrastructure.
 Manual cleanup:
 
 1. Confirm the profile URL is `https://github.com/OnourImpram`.
-2. Rename the profile README repository from `OnourImpram/TheGoatPsy` to `OnourImpram/OnourImpram`.
+2. Confirm the profile README renders from `OnourImpram/OnourImpram`.
 3. Remove duplicate ORCID link if present.
 4. Keep one ORCID link only.
 5. Keep LinkedIn once.
