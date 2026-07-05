@@ -1,14 +1,16 @@
 # Onour Impram
 
-> Clinical psychologist building accountable AI memory, safer agent workflows, and evidence grounded decision systems.
+> Accountable AI infrastructure for human stakes work.
 
-I work at the intersection of clinical psychology, AI safety, and research software engineering.
+I am a clinical psychologist and AI researcher building accountable memory, safer agent workflows, and evidence grounded decision systems.
 
 My central question is practical.
 
 **How can AI systems remember, reason, and act without becoming opaque, uncorrectable, or unsafe when human stakes are real?**
 
 My clinical background gives me a duty of care lens. My engineering work turns that lens into systems, local first memory, claim tracking, audit trails, reversibility gates, red team tests, and evidence aware workflows.
+
+Clinical duty of care, translated into accountable AI infrastructure.
 
 ## Start here
 
@@ -56,6 +58,12 @@ A risk scaled execution backbone for AI coding agents, workflow orchestration, a
 3. Translating clinical duty of care into AI infrastructure.
 4. Helping social scientists use agentic tools without methodological collapse.
 
+## Background
+
+Clinical psychologist, PhD candidate in Clinical and Health Psychology, AI and mental health researcher, educator, and builder of research software for human stakes domains.
+
+My work connects clinical safety, research methodology, local first software, and agent governance. The goal is not more automation by default. The goal is automation that can be inspected, corrected, constrained, and held accountable.
+
 ## Principles
 
 Correctness over appearance.
@@ -70,4 +78,4 @@ Every memory should be traceable, correctable, and accountable.
 
 ## Follow the work
 
-If this work is useful, star the projects you want to revisit and follow [@OnourImpram](https://github.com/OnourImpram) for future releases on accountable AI memory, agent safety, and research workflows.
+If this work is useful, star the projects you want to revisit and follow [@OnourImpram](https://github.com/OnourImpram) for future releases on accountable AI memory, agent safety, career decision safety, and research workflows.

@@ -4,10 +4,10 @@ These actions require GitHub UI, registry UI, release ownership, or external acc
 
 ## GitHub Profile Fields
 
-Recommended bio:
+Current bio applied through GitHub API:
 
 ```text
-Clinical psychologist building accountable AI memory, safer agent workflows, and evidence-grounded decision systems.
+Clinical psychologist building accountable AI memory, safer agent workflows, and evidence grounded decision systems.
 ```
 
 Optional shorter bio:
@@ -23,11 +23,13 @@ Manual cleanup:
 3. Remove duplicate ORCID link if present.
 4. Keep one ORCID link only.
 5. Keep LinkedIn once.
-6. Use `https://onourimpram.github.io` as website only after the portfolio homepage is ready.
+6. Use `https://onourimpram.github.io` as website after the portfolio homepage returns 200.
 7. Keep email public only if intentionally desired.
 8. Do not add phone number or private address.
 
 ## Pin Order
+
+The profile is pinned to the four flagship repositories. If GitHub UI permits manual reordering, use this order:
 
 1. `mneme`
 2. `vocation-os`
@@ -149,7 +151,7 @@ Create GitHub releases only where the repository has a stable enough state.
 
 Priority:
 
-1. `vocation-os`, release `v0.2.0` unless version is bumped first.
+1. `vocation-os`, release `v0.2.0`, completed.
 2. `mneme`, release only after npm and package metadata are confirmed.
 3. `mergen`, release only if external user installation is validated.
 
@@ -186,6 +188,13 @@ Risk-scaled execution harness for AI coding agents.
 
 ## Portfolio Homepage
 
-Create or confirm `OnourImpram/onourimpram.github.io`.
+Create or confirm `OnourImpram/onourimpram.github.io`. Initial repository and homepage are part of the 2026-07-05 profile growth pass.
 
 Keep existing privacy policy repositories and URLs intact. If privacy pages are migrated later, add redirects first and verify app store or external links before removing any old route.
+
+## Still Manual
+
+1. Upload social preview images through repository settings.
+2. Reorder pinned repositories in GitHub UI if the displayed order differs from the strategy.
+3. Verify ORCID and LinkedIn profile links manually.
+4. Create first Discussions posts only after release notes and roadmap framing are final.
