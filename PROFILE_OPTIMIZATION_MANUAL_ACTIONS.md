@@ -145,6 +145,12 @@ mneme use cases, what should accountable AI memory remember and forget?
 Claude Code for Social Scientists, which research workflow should be documented next?
 ```
 
+Initial discussions created:
+
+1. `https://github.com/OnourImpram/vocation-os/discussions/2`
+2. `https://github.com/OnourImpram/mneme/discussions/27`
+3. `https://github.com/OnourImpram/claude-code-for-social-scientists/discussions/37`
+
 ## Releases
 
 Create GitHub releases only where the repository has a stable enough state.
@@ -188,7 +194,7 @@ Risk-scaled execution harness for AI coding agents.
 
 ## Portfolio Homepage
 
-Create or confirm `OnourImpram/onourimpram.github.io`. Initial repository and homepage are part of the 2026-07-05 profile growth pass.
+Created `OnourImpram/onourimpram.github.io` as the portfolio homepage in the 2026-07-05 profile growth pass. Profile website field now points to `https://onourimpram.github.io/`.
 
 Keep existing privacy policy repositories and URLs intact. If privacy pages are migrated later, add redirects first and verify app store or external links before removing any old route.
 
@@ -197,4 +203,4 @@ Keep existing privacy policy repositories and URLs intact. If privacy pages are 
 1. Upload social preview images through repository settings.
 2. Reorder pinned repositories in GitHub UI if the displayed order differs from the strategy.
 3. Verify ORCID and LinkedIn profile links manually.
-4. Create first Discussions posts only after release notes and roadmap framing are final.
+4. Continue Discussions with release notes, roadmap updates, and concrete user questions.
