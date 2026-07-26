@@ -14,7 +14,7 @@ Clinical duty of care, translated into accountable AI infrastructure.
 
 ## Start here
 
-### [mneme](https://github.com/OnourImpram/mneme)
+### [mneme Record](https://github.com/OnourImpram/mneme)
 
 Vault native, accountable memory for Claude Code and MCP clients.
 
