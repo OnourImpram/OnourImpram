@@ -18,10 +18,10 @@ Clinical duty of care, translated into accountable AI infrastructure.
 
 Vault native, accountable memory for Claude Code and MCP clients.
 
-Markdown is the source of truth. No LLM runs on the Stop path. Derived stores are redacted before write. Retrieval combines SQLite FTS5, hybrid search, and reciprocal rank fusion.
+Markdown is the source of truth. No LLM runs on the Stop path, and CI fails the build on any network import in a lifecycle hook. Derived stores are redacted before write. Production retrieval is SQLite FTS5 BM25, guarded by a benchmark that fails a pull request if quality drops below the locked baseline.
 
 ```bash
-npx -y mneme-mcp-server
+pipx install mneme-cc-plugin && mneme install
 ```
 
 ### [VocationOS](https://github.com/OnourImpram/vocation-os)
@@ -29,6 +29,8 @@ npx -y mneme-mcp-server
 Evidence grounded career decision safety for high agency operators.
 
 A human supervised decision system with claim graphs, packet validation, reversibility gates, high stakes certainty brakes, and append only action ledgers.
+
+Read it as an architecture for what high stakes automation safety looks like, not as a tool that applies to jobs for you. It ships no production auto apply adapter; the compiled execution boundary permits only `local-fixture` with a synthetic profile.
 
 ```bash
 git clone https://github.com/OnourImpram/vocation-os
@@ -38,9 +40,15 @@ git clone https://github.com/OnourImpram/vocation-os
 
 A bilingual Turkish and English guide for using Claude Code in social science research without abandoning methodology, authorship transparency, or critical judgment.
 
-### [mergen](https://github.com/OnourImpram/mergen)
+### [Mergen Verdict](https://github.com/OnourImpram/mergen)
 
-A risk scaled execution backbone for AI coding agents, workflow orchestration, and adversarial verification.
+Independent milestone verification for agentic and human engineering workflows.
+
+An executor saying work is complete is a completion claim, not proof. Mergen reproduces the evidence, applies a risk floor that cannot be downgraded, and returns a fail-closed advancement decision. It does not execute the next stage.
+
+```bash
+pip install mergen-verdict
+```
 
 ## What I build
 
