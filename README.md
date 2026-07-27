@@ -2,7 +2,7 @@
   <img src="assets/profile-banner.png" width="100%" alt="Onour Impram, clinical psychologist and engineer. Accountable AI infrastructure for human stakes work: local-first memory, independent verification, and agent systems that answer unverifiable instead of guessing.">
 </p>
 
-I am a clinical psychologist and a PhD candidate in clinical and health psychology, and I build the parts of AI systems that have to answer for themselves once the stakes are human.
+I am a clinical psychologist with an MSc in clinical psychology and a second in counselling psychology, a PhD student, and currently training in AI engineering with IBM. I build the parts of AI systems that have to answer for themselves once the stakes are human.
 
 The question underneath all of it: **how can a system remember, reason and act without becoming opaque, uncorrectable, or unsafe when real people depend on it?**
 
@@ -23,10 +23,10 @@ pipx install mneme-cc-plugin && mneme install
 An executor reporting *done* has made a claim, not a proof. Mergen re-derives the evidence from the repository itself, applies a risk floor that cannot be downgraded, and returns one of `pass`, `conditional_pass`, `fail` or `unverifiable`. An `unverifiable` never becomes a `pass`, and it never runs the next stage.
 
 ```bash
-git clone https://github.com/OnourImpram/mergen && cd mergen && pip install -e .
+pip install mergen-verdict
 ```
 
-The editable clone is the supported path, not the published wheel: the wheel declares only the two top-level modules, so it cannot carry the verification scripts. The repository says so too.
+Through 2.1.1 the wheel declared only its two top-level modules and could not carry the verification scripts, and this page said so. 2.1.2 packages them, and a checkout still takes precedence over the packaged copy, so an editable clone runs the code you are editing.
 
 ### [routeledger](https://github.com/OnourImpram/routeledger) — what actually served your session
 
