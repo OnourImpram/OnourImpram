@@ -20,11 +20,13 @@ pipx install mneme-cc-plugin && mneme install
 
 ### [Mergen Verdict](https://github.com/OnourImpram/mergen) — verification that is allowed to say no
 
-An executor reporting *done* has made a claim, not a proof. Mergen re-derives the evidence from the repository itself, applies a risk floor that cannot be downgraded, and returns a fail-closed advancement decision. It never runs the next stage.
+An executor reporting *done* has made a claim, not a proof. Mergen re-derives the evidence from the repository itself, applies a risk floor that cannot be downgraded, and returns one of `pass`, `conditional_pass`, `fail` or `unverifiable`. An `unverifiable` never becomes a `pass`, and it never runs the next stage.
 
 ```bash
-pip install mergen-verdict
+git clone https://github.com/OnourImpram/mergen && cd mergen && pip install -e .
 ```
+
+The editable clone is the supported path, not the published wheel: the wheel declares only the two top-level modules, so it cannot carry the verification scripts. The repository says so too.
 
 ### [routeledger](https://github.com/OnourImpram/routeledger) — what actually served your session
 
@@ -50,6 +52,10 @@ Most of what I build is that habit turned into code. It is why these tools would
 
 ## If you would rather check than believe
 
-Every project carries CI, a license, tagged releases and a changelog. The packages are published on PyPI and npm. My academic identity is [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928). Where a claim could not be verified, the documentation says so rather than rounding it up.
+Every project carries CI, a license, tagged releases and a changelog. My academic identity is [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
+
+Outside my own repositories there is an open fix in [pytest-cov](https://github.com/pytest-dev/pytest-cov/pull/751), an open skill contribution to [anthropics/skills](https://github.com/anthropics/skills/pull/1147), and PowerShell support opened against [fableplan](https://github.com/tylerlaprade/fableplan/pull/1). Three of those are still awaiting review, which is the honest status.
+
+Where a claim could not be verified, the documentation says so rather than rounding it up. Mergen's README states which install path its own published wheel cannot support; routeledger's changelog lists four over-claims that were removed from it.
 
 If one of these is useful, starring it tells me which to keep working on.
