@@ -1,89 +1,55 @@
-# Onour Impram
+<p align="center">
+  <img src="assets/profile-banner.png" width="100%" alt="Onour Impram, clinical psychologist and engineer. Accountable AI infrastructure for human stakes work: local-first memory, independent verification, and agent systems that answer unverifiable instead of guessing.">
+</p>
 
-> Accountable AI infrastructure for human stakes work.
+I am a clinical psychologist and a PhD candidate in clinical and health psychology, and I build the parts of AI systems that have to answer for themselves once the stakes are human.
 
-I am a clinical psychologist and AI researcher building accountable memory, safer agent workflows, and evidence grounded decision systems.
+The question underneath all of it: **how can a system remember, reason and act without becoming opaque, uncorrectable, or unsafe when real people depend on it?**
 
-My central question is practical.
+## What I ship
 
-**How can AI systems remember, reason, and act without becoming opaque, uncorrectable, or unsafe when human stakes are real?**
+Five projects, all public, all installable or readable today.
 
-My clinical background gives me a duty of care lens. My engineering work turns that lens into systems, local first memory, claim tracking, audit trails, reversibility gates, red team tests, and evidence aware workflows.
+### [mneme](https://github.com/OnourImpram/mneme) — memory you can audit
 
-Clinical duty of care, translated into accountable AI infrastructure.
-
-## Start here
-
-### [mneme Record](https://github.com/OnourImpram/mneme)
-
-Vault native, accountable memory for Claude Code and MCP clients.
-
-Markdown is the source of truth. No LLM runs on the Stop path, and CI fails the build on any network import in a lifecycle hook. Derived stores are redacted before write. Production retrieval is SQLite FTS5 BM25, guarded by a benchmark that fails a pull request if quality drops below the locked baseline.
+Local-first memory for Claude Code and MCP clients, where Markdown stays the source of truth. No model runs on the Stop path. CI fails the build if a lifecycle hook imports the network. Retrieval is held to a locked benchmark baseline, and a pull request that drops below it does not merge.
 
 ```bash
 pipx install mneme-cc-plugin && mneme install
 ```
 
-### [VocationOS](https://github.com/OnourImpram/vocation-os)
+### [Mergen Verdict](https://github.com/OnourImpram/mergen) — verification that is allowed to say no
 
-Evidence grounded career decision safety for high agency operators.
-
-A human supervised decision system with claim graphs, packet validation, reversibility gates, high stakes certainty brakes, and append only action ledgers.
-
-Read it as an architecture for what high stakes automation safety looks like, not as a tool that applies to jobs for you. It ships no production auto apply adapter; the compiled execution boundary permits only `local-fixture` with a synthetic profile.
-
-```bash
-git clone https://github.com/OnourImpram/vocation-os
-```
-
-### [Claude Code for Social Scientists](https://github.com/OnourImpram/claude-code-for-social-scientists)
-
-A bilingual Turkish and English guide for using Claude Code in social science research without abandoning methodology, authorship transparency, or critical judgment.
-
-### [Mergen Verdict](https://github.com/OnourImpram/mergen)
-
-Independent milestone verification for agentic and human engineering workflows.
-
-An executor saying work is complete is a completion claim, not proof. Mergen reproduces the evidence, applies a risk floor that cannot be downgraded, and returns a fail-closed advancement decision. It does not execute the next stage.
+An executor reporting *done* has made a claim, not a proof. Mergen re-derives the evidence from the repository itself, applies a risk floor that cannot be downgraded, and returns a fail-closed advancement decision. It never runs the next stage.
 
 ```bash
 pip install mergen-verdict
 ```
 
-## What I build
+### [routeledger](https://github.com/OnourImpram/routeledger) — what actually served your session
 
-| Area | Focus |
-| --- | --- |
-| Accountable AI memory | Local first memory, redaction, retrieval, claim lifecycle, auditability |
-| Agent safety | Reversibility, guarded automation, prompt injection resistance, red team tests |
-| Research software | Citation audited workflows, reproducibility, academic disclosure, methodology |
-| Human stakes AI | Mental health, career decisions, professional identity, consent, accountability |
+The model answering your Claude Code turn can change without an error: an alias override, the plan-mode boundary, a safety fallback. Work continues and nothing tells you. Your transcript already recorded it; this reads it back. Read-only, offline, writes nothing.
 
-## Current focus
+```bash
+npx routeledger
+```
 
-1. Making AI memory inspectable, correctable, and safe.
-2. Building agent workflows that scale judgment, not just automation.
-3. Translating clinical duty of care into AI infrastructure.
-4. Helping social scientists use agentic tools without methodological collapse.
+### [VocationOS](https://github.com/OnourImpram/vocation-os) — decisions that need a human first
 
-## Background
+A local-first daemon for career actions that cannot be undone — send, submit, publish. Claim graphs, scoped human approval, reversibility gates, and an append-only ledger that records an action as done only against a trusted receipt. It ships no production auto-apply adapter, deliberately.
 
-Clinical psychologist, PhD candidate in Clinical and Health Psychology, AI and mental health researcher, educator, and builder of research software for human stakes domains.
+### [Claude Code for Social Scientists](https://github.com/OnourImpram/claude-code-for-social-scientists) — the handbook
 
-My work connects clinical safety, research methodology, local first software, and agent governance. The goal is not more automation by default. The goal is automation that can be inspected, corrected, constrained, and held accountable.
+A bilingual Turkish and English guide for researchers who want agentic tools without surrendering methodology, authorship transparency, or a reference list they can defend in review.
 
-## Principles
+## Why a clinician builds infrastructure
 
-Correctness over appearance.
+Clinical training is, in large part, training to act under uncertainty without pretending it is absent. You learn to keep what you observed separate from what you inferred, to write down which is which, and to stay answerable for the difference long after the session ends.
 
-Auditability over mystique.
+Most of what I build is that habit turned into code. It is why these tools would rather return `unverifiable` than a confident guess, and why the interesting engineering usually sits in what the system refuses to assert.
 
-Care over scale theatre.
+## If you would rather check than believe
 
-Local first when the stakes are human.
+Every project carries CI, a license, tagged releases and a changelog. The packages are published on PyPI and npm. My academic identity is [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928). Where a claim could not be verified, the documentation says so rather than rounding it up.
 
-Every memory should be traceable, correctable, and accountable.
-
-## Follow the work
-
-If this work is useful, star the projects you want to revisit and follow [@OnourImpram](https://github.com/OnourImpram) for future releases on accountable AI memory, agent safety, career decision safety, and research workflows.
+If one of these is useful, starring it tells me which to keep working on.
