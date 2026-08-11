@@ -52,7 +52,7 @@ Most of what I build is that habit turned into code. It is why these tools would
 
 ## If you would rather check than believe
 
-Every project carries CI, a license, tagged releases and a changelog. My academic identity is [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
+Every project carries CI, a license, tagged releases and a changelog. My site is [onourimpram.com](https://onourimpram.com), and my academic identity is [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
 
 Outside my own repositories there is an open fix in [pytest-cov](https://github.com/pytest-dev/pytest-cov/pull/751), an open skill contribution to [anthropics/skills](https://github.com/anthropics/skills/pull/1147), and PowerShell support opened against [fableplan](https://github.com/tylerlaprade/fableplan/pull/1). Three of those are still awaiting review, which is the honest status.
 
