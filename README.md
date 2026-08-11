@@ -2,7 +2,7 @@
   <img src="assets/profile-banner.png" width="100%" alt="Onour Impram, clinical psychologist and engineer. Accountable AI infrastructure for human stakes work: local-first memory, independent verification, and agent systems that answer unverifiable instead of guessing.">
 </p>
 
-I am a clinical psychologist with an MSc in clinical psychology and a second in counselling psychology, a PhD student, and currently training in AI engineering with IBM. I build the parts of AI systems that have to answer for themselves once the stakes are human.
+I am a clinical psychologist with an MSc in clinical psychology and a second in counselling psychology. I am working toward a doctorate in the same field, and I am currently training in AI engineering with IBM. I build the parts of AI systems that have to answer for themselves once the stakes are human.
 
 The question underneath all of it: **how can a system remember, reason and act without becoming opaque, uncorrectable, or unsafe when real people depend on it?**
 
