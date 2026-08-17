@@ -1,61 +1,103 @@
 <p align="center">
-  <img src="assets/profile-banner.png" width="100%" alt="Onour Impram, clinical psychologist and engineer. Accountable AI infrastructure for human stakes work: local-first memory, independent verification, and agent systems that answer unverifiable instead of guessing.">
+  <img src="assets/profile-banner.png" width="100%" alt="Onour Impram, clinical psychologist, AI researcher, and engineer. Inspectable memory, verifiable systems, and human approval for consequential decisions.">
 </p>
 
-I am a clinical psychologist with an MSc in clinical psychology and a second in counselling psychology. I am working toward a doctorate in the same field, and I am currently training in AI engineering with IBM. I build the parts of AI systems that have to answer for themselves once the stakes are human.
+I study and build AI systems designed around people, with inspectable memory, verifiable claims, and human approval for consequential action.
 
-The question underneath all of it: **how can a system remember, reason and act without becoming opaque, uncorrectable, or unsafe when real people depend on it?**
+## The problem I work on
 
-## What I ship
+Clinical work and agent engineering share a difficult requirement. A system must act under uncertainty without hiding what it remembers, overstating what its evidence supports, or taking an irreversible step on its own. My research examines the human mechanisms. My software turns those requirements into explicit controls.
 
-Five projects, all public, all installable or readable today.
+## Three lines of evidence
 
-### [mneme](https://github.com/OnourImpram/mneme) — memory you can audit
+### Research
 
-Local-first memory for Claude Code and MCP clients, where Markdown stays the source of truth. No model runs on the Stop path. CI fails the build if a lifecycle hook imports the network. Retrieval is held to a locked benchmark baseline, and a pull request that drops below it does not merge.
+I study clinical safety, calibrated reliance, emotional regulation, attachment, reinforcement, and human agency in interaction with AI.
 
-```bash
-pipx install mneme-cc-plugin && mneme install
-```
+### Systems
 
-### [Mergen Verdict](https://github.com/OnourImpram/mergen) — verification that is allowed to say no
+I build local memory, routing audit, independent verification, claim provenance, and decision control systems whose behavior can be inspected.
 
-An executor reporting *done* has made a claim, not a proof. Mergen re-derives the evidence from the repository itself, applies a risk floor that cannot be downgraded, and returns one of `pass`, `conditional_pass`, `fail` or `unverifiable`. An `unverifiable` never becomes a `pass`, and it never runs the next stage.
+### Human approval
 
-```bash
-pip install mergen-verdict
-```
+I keep consequential actions behind scoped approval, current evidence, and receipts tied to the action that actually occurred.
 
-Through 2.1.1 the wheel declared only its two top-level modules and could not carry the verification scripts, and this page said so. 2.1.2 packages them, and a checkout still takes precedence over the packaged copy, so an editable clone runs the code you are editing.
+## Selected projects
 
-### [routeledger](https://github.com/OnourImpram/routeledger) — what actually served your session
+### [mneme](https://github.com/OnourImpram/mneme)
 
-The model answering your Claude Code turn can change without an error: an alias override, the plan-mode boundary, a safety fallback. Work continues and nothing tells you. Your transcript already recorded it; this reads it back. Read-only, offline, writes nothing.
+**Problem.** Long projects lose context across sessions or bury it in stores that users cannot inspect.
 
-```bash
-npx routeledger
-```
+**Mechanism.** Plain Markdown remains the source of truth. Local retrieval, redaction before storage, and human approval for durable edits keep provenance visible.
 
-### [VocationOS](https://github.com/OnourImpram/vocation-os) — decisions that need a human first
+**Verification.** [`v3.6.3`](https://github.com/OnourImpram/mneme/releases/tag/v3.6.3) is the current public release under `Apache-2.0`. At commit [`6f8b714`](https://github.com/OnourImpram/mneme/commit/6f8b714f8c0bf52e43d4b79ced6d8fa61eb94ac6), repository integrity, benchmark, Python, Node, macOS, Windows, and Ubuntu checks were successful.
 
-A local-first daemon for career actions that cannot be undone — send, submit, publish. Claim graphs, scoped human approval, reversibility gates, and an append-only ledger that records an action as done only against a trusted receipt. It ships no production auto-apply adapter, deliberately.
+**Limit.** Production retrieval uses FTS5 BM25. Semantic embedding remains on the roadmap, and the published numbers are synthetic regression anchors rather than measurements of quality in real settings.
 
-### [Claude Code for Social Scientists](https://github.com/OnourImpram/claude-code-for-social-scientists) — the handbook
+### [Mergen Verdict](https://github.com/OnourImpram/mergen)
 
-A bilingual Turkish and English guide for researchers who want agentic tools without surrendering methodology, authorship transparency, or a reference list they can defend in review.
+**Problem.** A completion claim is not proof that the named artifact exists, the tests passed, or the evidence is current.
 
-## Why a clinician builds infrastructure
+**Mechanism.** Mergen rederives repository evidence and returns `pass`, `conditional_pass`, `fail`, or `unverifiable`. Human approval can be bound to the exact bytes of the verification report.
 
-Clinical training is, in large part, training to act under uncertainty without pretending it is absent. You learn to keep what you observed separate from what you inferred, to write down which is which, and to stay answerable for the difference long after the session ends.
+**Verification.** [`v2.1.3`](https://github.com/OnourImpram/mergen/releases/tag/v2.1.3) is the current public release under `Apache-2.0`. At commit [`2e64f62`](https://github.com/OnourImpram/mergen/commit/2e64f62a07c6ee5be6a45f45636dc45afb9bd54e), Python and Windows tests, strict mypy, ruff, coverage, CodeQL, and secret scan checks passed.
 
-Most of what I build is that habit turned into code. It is why these tools would rather return `unverifiable` than a confident guess, and why the interesting engineering usually sits in what the system refuses to assert.
+**Limit.** The bundled supervisor currently covers Mergen software task reports. It returns a decision but does not modify the judged artifact or start the next stage.
 
-## If you would rather check than believe
+### [routeledger](https://github.com/OnourImpram/routeledger)
 
-Every project carries CI, a license, tagged releases and a changelog. My site is [onourimpram.com](https://onourimpram.com), and my academic identity is [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
+**Problem.** A configured model name does not prove which model actually served a turn.
 
-Outside my own repositories there is an open fix in [pytest-cov](https://github.com/pytest-dev/pytest-cov/pull/751), an open skill contribution to [anthropics/skills](https://github.com/anthropics/skills/pull/1147), and PowerShell support opened against [fableplan](https://github.com/tylerlaprade/fableplan/pull/1). Three of those are still awaiting review, which is the honest status.
+**Mechanism.** routeledger reads local session records, compares declared and served models where evidence exists, and reports drift without writing files or sending data over a network.
 
-Where a claim could not be verified, the documentation says so rather than rounding it up. Mergen's README states which install path its own published wheel cannot support; routeledger's changelog lists four over-claims that were removed from it.
+**Verification.** [`v0.3.1`](https://github.com/OnourImpram/routeledger/releases/tag/v0.3.1) is the current public release under `MIT`. At commit [`75a2d4b`](https://github.com/OnourImpram/routeledger/commit/75a2d4b6c4bd67e4b38cfd0b56dde0d78be008d9), its Node 20 and Node 22 test matrix passed on Ubuntu and Windows.
 
-If one of these is useful, starring it tells me which to keep working on.
+**Limit.** routeledger cannot reconstruct environment variables or configuration in force at session time. Missing evidence becomes `unverifiable`, never a clean result.
+
+### [VocationOS](https://github.com/OnourImpram/vocation-os)
+
+**Problem.** A submission, outreach message, or licensing action can be difficult to reverse, while an agent can report completion without trusted proof.
+
+**Mechanism.** VocationOS binds claims to evidence, consequential actions to scoped human approval, and completion to a trusted receipt. Its signed checkpoints detect changes to prior entries in the audit trail.
+
+**Verification.** [`v0.6.2`](https://github.com/OnourImpram/vocation-os/releases/tag/v0.6.2) is the current release, distributed primarily as source under `MIT`. At commit [`5d73e93`](https://github.com/OnourImpram/vocation-os/commit/5d73e93be0260ea77efa792de421aee91b83a32e), build, Ubuntu, Windows, CodeQL, and deployment checks passed.
+
+**Limit.** The release does not include a production adapter for automatically submitting job applications. The only executable adapter is a local synthetic fixture.
+
+### [Claude Code for Social Scientists](https://github.com/OnourImpram/claude-code-for-social-scientists)
+
+**Problem.** Social scientists need practical AI workflows that preserve research integrity, source verification, confidentiality, and bilingual conceptual parity.
+
+**Mechanism.** The project combines a Turkish and English curriculum for Claude Code with 32 narrow research skills that can be installed for Claude Code or Codex.
+
+**Verification.** [`v5.0.0`](https://github.com/OnourImpram/claude-code-for-social-scientists/releases/tag/v5.0.0) is the current public release. Its code is licensed under `Apache-2.0`, and its prose under `CC-BY-NC-SA-4.0`. It has the Zenodo DOI [`10.5281/zenodo.20289687`](https://doi.org/10.5281/zenodo.20289687). At commit [`1674b12`](https://github.com/OnourImpram/claude-code-for-social-scientists/commit/1674b12c2c41462d03ef1dd594ebda77bfdc227b), repository, DOI, external link, and secret scan checks passed.
+
+**Limit.** The build checks declared citation status and repository consistency. Underlying sources still require human verification at claim level, and the human researcher retains scientific, ethical, clinical, and professional authority.
+
+## Research and books
+
+**Research agenda.** I organize the work around context, mechanism, evidence, and limits. Current themes include clinical safety, calibrated reliance, regulation in interactions between people and AI, attachment, reinforcement, problematic involvement, and meaningful human oversight. More detail is available on the [research page](https://onourimpram.com/en/research).
+
+**Book.** [*Üretken Yapay Zekâ ve Ruh Sağlığı*](https://www.kitapyurdu.com/kitap/uretken-yapay-zeka-ve-ruh-sagligi/755202.html). My monograph was published by Nobel Akademik in 2026. It examines generative AI across psychotherapy, psychoeducation, assessment, and crisis intervention. ISBN `9786253642419`.
+
+**Book chapters.** [*Pozitif Psikoloji*](https://www.kitapyurdu.com/kitap/pozitif-psikoloji/748917.html). I contributed chapters on overcoming difficult times, strengths, meaning, mindfulness, and positive relationships. Ibn Haldun University Press, 2026. ISBN `9786259302348`.
+
+**Published research.** A 2024 article examining the feasibility of using therapy involving animals to treat depression, published in *Current Approaches in Psychiatry*, 16(3). [DOI 10.18863/pgy.1373976](https://doi.org/10.18863/pgy.1373976).
+
+**Research resource.** The mental health booklet series [*A Closer Look at Mental Health*](https://doi.org/10.5281/zenodo.21768233) is available under `CC BY-NC-ND 4.0`.
+
+**Academic identity.** [ORCID 0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
+
+## Upstream contributions
+
+Public status verified on August 18, 2026.
+
+**pytest-cov.** [Pull request 751](https://github.com/pytest-dev/pytest-cov/pull/751) makes the `fail-under` summary agree with the exit code. Status: open.
+
+**anthropics/skills.** [Pull request 1147](https://github.com/anthropics/skills/pull/1147) adds a Turkish academic writing skill. Status: open.
+
+**fableplan.** [Pull request 1](https://github.com/tylerlaprade/fableplan/pull/1) adds PowerShell support. Status: open.
+
+## Collaboration
+
+If you are working on clinical AI safety, research integrity, or verifiable agent systems, I welcome a focused collaboration proposal through [onourimpram.com](https://onourimpram.com).
