@@ -4,6 +4,12 @@
 
 I study and build AI systems designed around people, with inspectable memory, verifiable claims, and human approval for consequential action.
 
+## Onour Impram Ventures Ltd
+
+[![SPONSORED BY E2B FOR STARTUPS](https://img.shields.io/badge/SPONSORED%20BY-E2B%20FOR%20STARTUPS-ff3001?style=for-the-badge&labelColor=black)](https://e2b.dev/startups)
+
+**Supported by E2B for Startups.** We are grateful to E2B for supporting our AI research and agent infrastructure work with E2B credits and sandbox infrastructure.
+
 ## The problem I work on
 
 Clinical work and agent engineering share a difficult requirement. A system must act under uncertainty without hiding what it remembers, overstating what its evidence supports, or taking an irreversible step on its own. My research examines the human mechanisms. My software turns those requirements into explicit controls.
