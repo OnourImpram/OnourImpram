@@ -36,7 +36,7 @@ I keep consequential actions behind scoped approval, current evidence, and recei
 
 **Mechanism.** Plain Markdown remains the source of truth. Local retrieval, redaction before storage, and human approval for durable edits keep provenance visible.
 
-**Verification.** [`v3.6.3`](https://github.com/OnourImpram/mneme/releases/tag/v3.6.3) is the current public release under `Apache-2.0`. At commit [`6f8b714`](https://github.com/OnourImpram/mneme/commit/6f8b714f8c0bf52e43d4b79ced6d8fa61eb94ac6), repository integrity, benchmark, Python, Node, macOS, Windows, and Ubuntu checks were successful.
+**Verification.** [`v4.1.0`](https://github.com/OnourImpram/mneme/releases/tag/v4.1.0) is the current public release under `Apache-2.0`, published to npm as `mneme-mcp-server` and listed in the Model Context Protocol registry as `io.github.OnourImpram/mneme`. At commit [`de0712c`](https://github.com/OnourImpram/mneme/commit/de0712ca8e00cec52e77fa215329f31d11254be2), repository integrity, the seven-surface benchmark gate, the Neo4j knowledge-graph integration, CodeQL, and the Python 3.11 through 3.14 and Node 22 and 24 matrices on Ubuntu, macOS, and Windows were all successful.
 
 **Limit.** Production retrieval uses FTS5 BM25. Semantic embedding remains on the roadmap, and the published numbers are synthetic regression anchors rather than measurements of quality in real settings.
 
