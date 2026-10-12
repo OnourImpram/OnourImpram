@@ -10,6 +10,10 @@ I study and build AI systems designed around people, with inspectable memory, ve
 
 **Supported by E2B for Startups.** We are grateful to E2B for supporting our AI research and agent infrastructure work with E2B credits and sandbox infrastructure.
 
+[![Microsoft for Startups - US$5,000 in Azure credits](https://img.shields.io/badge/Microsoft%20for%20Startups-US%245%2C000%20Azure%20credits-0078D4?style=for-the-badge&labelColor=black)](https://www.microsoft.com/en-us/startups)
+
+**Supported by Microsoft for Startups.** OIV has been approved for US$5,000 in Azure startup credits to support building, testing, and scaling our software.
+
 ## The problem I work on
 
 Clinical work and agent engineering share a difficult requirement. A system must act under uncertainty without hiding what it remembers, overstating what its evidence supports, or taking an irreversible step on its own. My research examines the human mechanisms. My software turns those requirements into explicit controls.
