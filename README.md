@@ -60,9 +60,29 @@ I keep consequential actions behind scoped approval, current evidence, and recei
 
 **Mechanism.** routeledger reads local session records, compares declared and served models where evidence exists, and reports drift without writing files or sending data over a network.
 
-**Verification.** [`v0.3.1`](https://github.com/OnourImpram/routeledger/releases/tag/v0.3.1) is the current public release under `MIT`. At commit [`75a2d4b`](https://github.com/OnourImpram/routeledger/commit/75a2d4b6c4bd67e4b38cfd0b56dde0d78be008d9), its Node 20 and Node 22 test matrix passed on Ubuntu and Windows.
+**Verification.** [`v0.4.0`](https://github.com/OnourImpram/routeledger/releases/tag/v0.4.0) is the current public release under `MIT`. At commit [`0c04179`](https://github.com/OnourImpram/routeledger/commit/0c04179dcf75dbc3f27bd4a9400fccd7594f01b9), its Node 20 and Node 22 test matrix passed on Ubuntu and Windows.
 
 **Limit.** routeledger cannot reconstruct environment variables or configuration in force at session time. Missing evidence becomes `unverifiable`, never a clean result.
+
+### [claude-oauth](https://github.com/OnourImpram/claude-oauth)
+
+**Problem.** Claude Code is an agent harness worth learning, but paying for it is often not possible for students and researchers who already hold another model plan. And a model that wrote a change is the worst judge of that change.
+
+**Mechanism.** `claude-oauth` starts a real Claude Code process and points its upstream endpoint at a loopback router, so Google, xAI and OpenAI models answer over the account's own OAuth session. `claude` stays native. Delegate agents and a `/model` switch hand a review to a model from a different vendor.
+
+**Verification.** There is no tagged release yet. The claim that installing it does not degrade native Claude Code is measured by a two-arm probe that ships in the repository; both arms passed on Windows on 8 September 2026. Open and repaired defects are listed by id in the README.
+
+**Limit.** Pre-release and not ready to use. Several capability claims are gated on open defects, the router has only been exercised on Windows, and macOS is unsupported.
+
+### [autofusion](https://github.com/OnourImpram/autofusion)
+
+**Problem.** A larger model panel is not automatically a better panel. Models can share blind spots, judges can be biased by answer order, and a polished synthesis can hide unresolved contradictions.
+
+**Mechanism.** The active Claude Code session drafts the work and reconciles the findings. Independent reviewers examine the same frozen packet without seeing each other, trusted verification commands ground the checkable findings, and a metadata-only receipt links packet, calls, grounding and decision through hashes. Unresolved disagreement stays visible.
+
+**Verification.** [`v0.6.0`](https://github.com/OnourImpram/autofusion/releases/tag/v0.6.0) is the latest tagged release under `MIT`; version 0.7.0 is prepared on `main` and not tagged. Every enabled advertised model profile has a dated live smoke recorded in the repository.
+
+**Limit.** This is an alpha runtime. Whether cross-model review beats same-model self-review on real decisions has not been measured.
 
 ### [VocationOS](https://github.com/OnourImpram/vocation-os)
 
