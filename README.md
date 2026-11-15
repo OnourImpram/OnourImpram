@@ -82,7 +82,7 @@ I keep consequential actions behind scoped approval, current evidence, and recei
 
 **Verification.** [`v1.0.0`](https://github.com/OnourImpram/autofusion/releases/tag/v1.0.0) is the latest release under `MIT`. Every enabled advertised model profile has a dated live smoke recorded in the repository.
 
-**Limit.** This is an alpha runtime. Whether cross-model review beats same-model self-review on real decisions has not been measured.
+**Limit.** Whether cross-model review beats same-model self-review on real decisions has not been measured.
 
 ### [VocationOS](https://github.com/OnourImpram/vocation-os)
 
