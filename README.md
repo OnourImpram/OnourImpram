@@ -70,7 +70,7 @@ I keep consequential actions behind scoped approval, current evidence, and recei
 
 **Mechanism.** `claude-oauth` starts a real Claude Code process and points its upstream endpoint at a loopback router, so Google, xAI and OpenAI models answer over the account's own OAuth session. `claude` stays native. Delegate agents and a `/model` switch hand a review to a model from a different vendor.
 
-**Verification.** There is no tagged release yet. The claim that installing it does not degrade native Claude Code is measured by a two-arm probe that ships in the repository; both arms passed on Windows on 8 September 2026. Open and repaired defects are listed by id in the README.
+**Verification.** [`v2.0.0`](https://github.com/OnourImpram/claude-oauth/releases/tag/v2.0.0) is the first tagged release, a pre-release under `Apache-2.0`. The claim that installing it does not degrade native Claude Code is measured by a two-arm probe that ships in the repository; both arms passed on Windows on 8 September 2026. Open and repaired defects are listed by id in the README.
 
 **Limit.** Pre-release and not ready to use. Several capability claims are gated on open defects, the router has only been exercised on Windows, and macOS is unsupported.
 
@@ -80,7 +80,7 @@ I keep consequential actions behind scoped approval, current evidence, and recei
 
 **Mechanism.** The active Claude Code session drafts the work and reconciles the findings. Independent reviewers examine the same frozen packet without seeing each other, trusted verification commands ground the checkable findings, and a metadata-only receipt links packet, calls, grounding and decision through hashes. Unresolved disagreement stays visible.
 
-**Verification.** [`v0.6.0`](https://github.com/OnourImpram/autofusion/releases/tag/v0.6.0) is the latest tagged release under `MIT`; version 0.7.0 is prepared on `main` and not tagged. Every enabled advertised model profile has a dated live smoke recorded in the repository.
+**Verification.** [`v1.0.0`](https://github.com/OnourImpram/autofusion/releases/tag/v1.0.0) is the latest release under `MIT`. Every enabled advertised model profile has a dated live smoke recorded in the repository.
 
 **Limit.** This is an alpha runtime. Whether cross-model review beats same-model self-review on real decisions has not been measured.
 
