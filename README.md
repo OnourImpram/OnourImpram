@@ -70,9 +70,9 @@ I keep consequential actions behind scoped approval, current evidence, and recei
 
 **Mechanism.** `claude-oauth` starts a real Claude Code process and points its upstream endpoint at a loopback router, so Google, xAI and OpenAI models answer over the account's own OAuth session. `claude` stays native. Delegate agents and a `/model` switch hand a review to a model from a different vendor.
 
-**Verification.** [`v2.0.0`](https://github.com/OnourImpram/claude-oauth/releases/tag/v2.0.0) is the first tagged release, a pre-release under `Apache-2.0`. The claim that installing it does not degrade native Claude Code is measured by a two-arm probe that ships in the repository; both arms passed on Windows on 8 September 2026. Open and repaired defects are listed by id in the README.
+**Verification.** [`v2.0.0`](https://github.com/OnourImpram/claude-oauth/releases/tag/v2.0.0) is the first tagged release, under `Apache-2.0`. The claim that installing it does not degrade native Claude Code is measured by a two-arm probe that ships in the repository; both arms passed on Windows on 8 September 2026. Defects are listed by id in the README: 23 of 26 are repaired and three are open.
 
-**Limit.** Pre-release and not ready to use. Several capability claims are gated on open defects, the router has only been exercised on Windows, and macOS is unsupported.
+**Limit.** Ready to use on Windows only: the router has not been exercised elsewhere and macOS is unsupported. Two of the three open defects sit in a non-default mode. There is no packaged installer; it is built from the tree.
 
 ### [autofusion](https://github.com/OnourImpram/autofusion)
 
